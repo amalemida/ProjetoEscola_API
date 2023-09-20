@@ -3,6 +3,20 @@ using ProjetoEscola_API.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//Allow CORS
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
+builder.Services.AddCors(options =>
+{
+options.AddPolicy(MyAllowSpecificOrigins, builder => {
+builder.WithOrigins("http://localhost").AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+builder.SetIsOriginAllowed(origin => new Uri(origin).Host == "localhost");
+builder.SetIsOriginAllowed(origin => true);
+});
+});
+
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -26,6 +40,9 @@ if (app.Environment.IsDevelopment())
 }
 
 //app.UseHttpsRedirection();
+
+//Allow CORS
+app.UseCors(MyAllowSpecificOrigins);
 
 app.UseAuthorization();
 
