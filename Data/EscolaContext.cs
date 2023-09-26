@@ -26,6 +26,7 @@ protected readonly IConfiguration Configuration;
         }
 
         public DbSet<Aluno>? Aluno { get; set; }
+        public DbSet<User>? Usuario { get; set; }
     }
 
 }
