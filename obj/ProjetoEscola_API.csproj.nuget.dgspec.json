@@ -1,30 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "/Users/u22529/ProjetoEscola_API/ProjetoEscola_API.csproj": {}
+    "C:\\Users\\Marcelo\\vcode-workspace\\ProjetoEscola_API\\ProjetoEscola_API.csproj": {}
   },
   "projects": {
-    "/Users/u22529/ProjetoEscola_API/ProjetoEscola_API.csproj": {
+    "C:\\Users\\Marcelo\\vcode-workspace\\ProjetoEscola_API\\ProjetoEscola_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/u22529/ProjetoEscola_API/ProjetoEscola_API.csproj",
+        "projectUniqueName": "C:\\Users\\Marcelo\\vcode-workspace\\ProjetoEscola_API\\ProjetoEscola_API.csproj",
         "projectName": "ProjetoEscola_API",
-        "projectPath": "/Users/u22529/ProjetoEscola_API/ProjetoEscola_API.csproj",
-        "packagesPath": "/Users/u22529/.nuget/packages/",
-        "outputPath": "/Users/u22529/ProjetoEscola_API/obj/",
+        "projectPath": "C:\\Users\\Marcelo\\vcode-workspace\\ProjetoEscola_API\\ProjetoEscola_API.csproj",
+        "packagesPath": "C:\\Users\\Marcelo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marcelo\\vcode-workspace\\ProjetoEscola_API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/u22529/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Marcelo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -35,8 +40,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.AspNetCore.Authentication": {
               "target": "Package",
@@ -44,11 +49,7 @@
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[7.0.11, )"
-            },
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[6.0.25, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -84,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
         }
       }
     }
